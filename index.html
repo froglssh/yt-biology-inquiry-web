@@ -54,6 +54,7 @@
     }
 
     .nav {
+      position: relative;
       max-width: 1180px;
       margin: 0 auto;
       padding: 12px 22px;
@@ -61,6 +62,18 @@
       align-items: center;
       justify-content: space-between;
       gap: 18px;
+    }
+
+    .nav-center-title {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 1.5rem;
+      font-weight: 900;
+      color: var(--ink);
+      font-family: "Noto Serif TC", serif;
+      letter-spacing: 2px;
+      white-space: nowrap;
     }
 
     .brand {
@@ -519,6 +532,10 @@
         flex-direction: column;
       }
 
+      .nav-center-title {
+        display: none;
+      }
+
       .nav-links,
       .filters {
         justify-content: flex-start;
@@ -560,6 +577,7 @@
         <img src="麗山生物圖案.jpg" alt="麗山生物圖案">
         <span>看YT學生物/探究</span>
       </a>
+      <div class="nav-center-title">翰林生物</div>
       <div class="nav-links">
         <a href="#topics">主題總覽</a>
         <a href="#bio">看YT學生物</a>
