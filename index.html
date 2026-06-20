@@ -141,6 +141,33 @@
       font-weight: 900;
     }
 
+    .hero-top-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .hanlin-badge {
+      font-size: 2.2rem;
+      font-weight: 900;
+      color: var(--bio);
+      font-family: "Noto Serif TC", serif;
+      letter-spacing: 3px;
+      line-height: 1;
+    }
+
+    @media (max-width: 580px) {
+      .hero-top-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+      }
+      .hanlin-badge {
+        font-size: 1.8rem;
+      }
+    }
+
     h1 {
       margin: 18px 0 16px;
       font-size: clamp(2.6rem, 6vw, 5.8rem);
@@ -544,7 +571,10 @@
 
   <section class="hero" id="top">
     <div>
-      <span class="eyebrow">高中生物影片教材入口</span>
+      <div class="hero-top-row">
+        <span class="eyebrow">高中生物影片教材入口</span>
+        <span class="hanlin-badge">翰林生物</span>
+      </div>
       <h1>看YT學生物/探究</h1>
       <p class="teacher">製作者：臺北市麗山高中林獻升老師</p>
       <p class="hero-copy">本頁將「看YT學生物」與「看YT學探究」兩個系列合併整理，依主題、類型與課程用途快速連結到已建立的公開教學網頁，並保留雲端資料入口，方便教師備課、學生自學與課堂探究活動使用。</p>
